@@ -1,0 +1,49 @@
+<!-- 
+Exercise : 
+
+Create a simple button and one(or two?) paragraph with text “Hi”. Once the button is clicked, the paragraph text should change to “Hello”. If button is clicked once again, the paragraph text should again change to “Hi”. This process must repeat on subsequent clicks. 
+
+Show text value of Textbox in a <p></p> tag when user press ENter key.
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Simple Interest
+</title>
+</head>
+
+
+<body>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+			  	
+</script>
+<p id="para" value="0">
+	Hi
+</p>
+
+<button type="button" id="btn">Click Me!</button> 
+<script>
+$(document).ready(function(){
+	$("#btn").click(function(){
+  var pro=$("#para").attr("value")
+  if(pro==0){
+    	$("#para").text("Hello");
+    	$("#para").attr("value","1");
+  }
+  else{
+  $("#para").text("Hi");
+  $("#para").attr("value","0");	
+  }
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li
+-->
+<html>
+<head>
+<title>
+</title>
+</head>
+<body id="test" class="body-new">
+<div id="main">
+Click Me
+<ul>
+<li>About us</li>
+</ul>
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script>
+	
+	$(document).ready(function() {
+$('#main').click(function(){
+alert('parent div');
+});
+$("#main li").click(function(e) {
+        $("#main").off("click");
+   });
+})
+
+	
+</script>
+
+</body>
+
+</html>

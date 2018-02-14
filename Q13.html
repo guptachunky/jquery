@@ -1,0 +1,37 @@
+<!--Get the max height of elements using jquery each method -->
+<html>
+<head>
+<title>
+</title>
+</head>
+<body id="test" class="body-new">
+<div class="main" style="max-height:20px">
+</div>
+<div class="main" style="max-height:20px" >
+</div>
+<div class="main" style="max-height:20px">
+</div>
+Maximum Height:
+<table>
+<tr id="tr">
+
+</tr>
+</table>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script>
+	
+$(document).ready(function(){
+  $(".main").each(function( i ) {
+	var height=$(this).css('max-height');
+    var el = $("<td>"+height+"</td>", {
+	
+	});
+$("#tr").append(el);    
+});
+});
+
+</script>
+
+</body>
+
+</html>

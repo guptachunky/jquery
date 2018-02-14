@@ -1,0 +1,39 @@
+<!--Chagne color of every cell which has numberl larger than 10.-->
+<html>
+<head>
+
+<title>
+</title>
+</head>
+<body id="test" class="body-new">
+	<div id="main" class="tothenew">
+	Enter Number:-	<input class="s_input">
+		<button class="s_btn">Add</button>
+	</div>
+	<table>
+		<thead>
+			<tr>
+			<th>Number</th>
+			</tr>
+		</thead>
+		<tbody id="s_add">
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+	</script><script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script >		
+$(document).ready(function(){
+	$('.s_btn').click(function(){
+		if($('.s_input').val()>10)
+			{$('#s_add').append('<tr><td style="background:red;">'+$('.s_input').val()+'</td></tr>');}
+		else
+		{
+			$('#s_add').append('<tr><td>'+$('.s_input').val()+'</td></tr>');
+		}
+	});
+});
+</script>
+</body>
+
+</html>

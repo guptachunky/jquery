@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+QUestion 8
+</title>
+</head>
+
+
+<body>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+			  	
+</script>
+<button type="button" id="btn"> Click here</button>
+<script>
+
+$(document).ready(function(){
+	$("#btn").click(function(){
+		$("#btn").before("<p> New Paragraph Added </p>");
+
+});
+
+});
+
+
+$(document).ready(function(){
+	$("p").on("click",function(){
+		alert("alert box");
+
+
+});
+});
+
+</script>
+
+</body>
+</html>

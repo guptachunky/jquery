@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Simple Interest
+</title>
+</head>
+
+
+<body>
+<div id="main">
+div with main as id</br>
+<div class="target" >
+	Div with target class
+</div>
+
+</div>
+</br>
+</br>
+</br>
+<div id="main1">
+div with main1 as id</br>
+<div class="target" >
+	Div with target class
+</div>
+
+</div>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+			  	
+</script>
+<button type="button" id="btn"> Click here</button>
+<script>
+
+$(document).ready(function(){
+	$("#btn").click(function(){
+		$("#main .target").css("font-size","xx-large")
+
+});
+});
+</script>
+
+</body>
+</html>

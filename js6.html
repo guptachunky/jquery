@@ -1,0 +1,39 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Simple Interest
+</title>
+</head>
+
+
+<body>
+<div id="first">
+	First Div
+</div>
+<div id="two">
+	First Div
+</div>
+<div id="three">
+	First Div
+</div>
+<div id="four">
+	First Div
+</div>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+			  	
+</script>
+<button type="button" id="btn"> Click here</button>
+<script>
+$(document).ready(function(){
+	$("#btn").click(function(){
+		$("div").replaceWith("<p>Changed To paragraphs</p>")
+	});
+});
+</script>
+
+</body>
+</html>
